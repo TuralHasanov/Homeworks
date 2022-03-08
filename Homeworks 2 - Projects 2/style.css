@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Montserrat+Alternates:wght@500;600&family=Montserrat:wght@600&family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+.main-container {
+  width: 100%;
+  height: 800px;
+  background-color: rgb(243, 234, 232);
+  text-align: center;
+}
+.container-info {
+  color: grey;
+  font-size: 15px;
+  padding-top: 5%;
+}
+
+.container-title {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 1%;
+}
+.container-description {
+  color: grey;
+  font-size: 15px;
+  padding-top: 1%;
+}
+.container-images-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+}
+.images-card {
+  width: 200px;
+  height: 300px;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.images-card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+}
+#images-card1 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("images/bg2.jpg");
+}
+#images-card2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("images/bg1.1.jpg");
+}
+#images-card3 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("images/bg3.jpg");
+}
+#images-card4 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("images/bg4.jpg");
+}
+.container-images-column li {
+  list-style: none;
+  position: relative;
+}
+.container-button {
+  padding-top: 3%;
+}
+.btn-discover {
+  width: 140px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 99, 71, 1);
+}
+.btn-discover:hover {
+  background-color: rgba(255, 99, 71, 0.8);
+  font-size: 17px;
+  cursor: pointer;
+  color: #e9ddca;
+  border: 1px solid #e9ddca;
+}
+.images-card span {
+  position: absolute;
+  bottom: 3px;
+  left: 6px;
+  text-align: left;
+}
+p.images-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: azure;
+}
+p.images-description {
+  font-size: 15px;
+  color: aliceblue;
+}
