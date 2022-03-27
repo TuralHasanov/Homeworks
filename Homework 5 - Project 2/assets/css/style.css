@@ -1,0 +1,218 @@
+/*
+================
+GLOBAL STYLE
+================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/*
+================
+INFO STYLE
+================
+*/
+.info {
+  width: 100%;
+  height: 20vh;
+  background: whitesmoke;
+  margin-top: 3%;
+}
+.info-header,
+.info-title,
+.info-description {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  margin-top: 1%;
+}
+.info-header {
+  text-transform: uppercase;
+  color: 14px;
+  color: silver;
+  font-weight: 100;
+}
+
+.info-title {
+  text-transform: uppercase;
+  color: 18px;
+  color: black;
+}
+
+.info-description {
+  color: 14px;
+  color: rgb(139, 134, 134);
+  font-weight: 400;
+}
+
+/*
+================
+MENU STYLE
+================
+*/
+.menu {
+  width: 100%;
+  height: 6vh;
+  background: whitesmoke;
+  margin-top: 1%;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(139, 134, 134);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.menu ul li {
+  list-style: none;
+  margin-left: 2%;
+  position: relative;
+}
+
+.menu ul li a:hover {
+  font-weight: bold;
+  color: black;
+  transition: 0.5s all linear;
+}
+.menu ul li::after {
+  content: "";
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: rgb(20, 236, 56);
+  width: 0;
+  position: absolute;
+}
+.menu ul li:hover::after {
+  width: 100%;
+  transition: 0.6s all linear;
+}
+
+/*
+================
+PRODUCTS STYLE
+================
+*/
+.products {
+  width: 100%;
+  height: 60vh;
+  background: whitesmoke;
+  display: flex;
+}
+
+.product {
+  width: 20.1%;
+  height: 56vh;
+  background: whitesmoke;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2vh;
+  cursor: pointer;
+  overflow: hidden;
+}
+.product:hover {
+  transition: 0.5s all linear;
+  box-shadow: 2px 2px 10px rgb(229, 226, 226);
+}
+.product img {
+  width: 100%;
+  height: 42vh;
+  background-size: cover;
+}
+/*Product Titles*/
+
+.product h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 1%;
+  font-weight: bold;
+}
+.product h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 1%;
+  font-weight: 400;
+  color: gray;
+}
+.product h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 1%;
+  color: rgb(15, 202, 77);
+  font-weight: bold;
+}
+
+/*Product Description For Discounts*/
+.product-desc {
+  position: absolute;
+  width: 40px;
+  top: 38vh;
+  margin-left: 10px;
+  height: 40px;
+  color: white;
+  background: rgb(86, 248, 86);
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 14px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.product-desc:hover {
+  background-color: orange;
+}
+
+/*
+================
+DIRECTION STYLE
+================
+*/
+/*Left Direction*/
+span {
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 30px;
+  transform: translateX(7px);
+}
+
+/*Right Direction*/
+
+.right-side {
+  color: silver;
+  margin-top: 40px;
+  font-size: 30px;
+  transform: translateX(-40px);
+}
+
+/*DIRECTION General*/
+span a {
+  color: silver;
+}
+
+span a:hover {
+  color: rgb(15, 240, 45);
+}
+
+/*
+================
+END
+================
+*/
