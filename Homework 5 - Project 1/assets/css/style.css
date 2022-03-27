@@ -1,0 +1,125 @@
+/*
+===================
+GLOBAL SYTLE
+===================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+===================
+MAIN CONTAINER SYTLE
+===================
+*/
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 235, 210);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*
+===================
+CARD SYTLE
+===================
+*/
+.card {
+  width: 25%;
+  height: 30vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden;
+}
+.card:hover {
+  box-shadow: 1px 2px 10px rgb(121, 98, 98);
+  transition: 0.5s all linear;
+  cursor: pointer;
+  transform: scale(1.1);
+  outline: 2px solid rgb(214, 207, 207);
+}
+
+/*
+===================
+CARD 1 SYTLE
+===================
+*/
+#card-1 {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.699),
+      rgba(126, 13, 13, 0.5)
+    ),
+    url("/assets/ımages/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*
+===================
+CARD 2 SYTLE
+===================
+*/
+#card-2 {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.699),
+      rgba(126, 13, 13, 0.5)
+    ),
+    url("/assets/ımages/bg5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*
+===================
+CARD 3 SYTLE
+===================
+*/
+#card-3 {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.699),
+      rgba(126, 13, 13, 0.5)
+    ),
+    url("/assets/ımages/bg4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*
+===================
+CARDS TITLE SYTLE
+===================
+*/
+.card-title {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  padding: 35px 15px;
+}
+
+/*
+===================
+CARDS LINK SYTLE
+===================
+*/
+.card-link {
+  text-decoration: none;
+  margin-left: 15px;
+  position: relative;
+  top: -25px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  border-bottom: 2px solid rgb(64, 172, 190);
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
