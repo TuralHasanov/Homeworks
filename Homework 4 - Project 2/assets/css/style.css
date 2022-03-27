@@ -1,0 +1,163 @@
+/*
+===================
+GLOBAL STYLES
+===================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+}
+/*
+===================
+MAIN CONTAINER
+===================
+*/
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to left bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(21, 55, 95, 0.8)
+    ),
+    url("/assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*
+===================
+FORM SECTION
+===================
+*/
+.form-section {
+  width: 60%;
+  height: 100vh;
+  display: blo;
+  margin: auto;
+}
+
+/*
+===================
+FORM AREA
+===================
+*/
+.form-area {
+  display: block;
+  padding-top: 20%;
+  padding-left: 30%;
+}
+
+/*Form Header*/
+.form-header,
+.form-description {
+  display: block;
+  text-align: left;
+}
+
+.form-header {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+
+.form-header::after {
+  content: "";
+  height: 3px;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(33, 214, 214);
+  width: 0;
+  position: absolute;
+}
+.form-header:hover::after {
+  width: 35%;
+  transition: 1s all linear;
+}
+
+/*Form Description*/
+
+.form-description {
+  font-size: 16px;
+  margin-top: 3%;
+  font-weight: 200;
+  color: silver;
+}
+
+/*INPUTS*/
+
+input[type="text"],
+input[type="email"],
+input[type="phone"] {
+  display: block;
+  width: 70%;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 2%;
+  height: 6vh;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+input:focus {
+  background-color: yellow;
+}
+
+input[type="text"] {
+  margin-top: 4%;
+  width: 70%;
+}
+input[type="checkbox"] {
+  margin-top: 4%;
+}
+input::placeholder {
+  color: silver;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  padding-left: 5%;
+}
+.checkbox-info {
+  font-size: 16px;
+  color: silver;
+}
+
+/*
+===================
+BUTTONS
+===================
+*/
+
+button {
+  width: 70%;
+  margin-top: 3%;
+  height: 8vh;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgb(33, 214, 214);
+  cursor: pointer;
+  overflow: hidden;
+  padding-bottom: 1px;
+}
+button:hover {
+  color: white;
+  background-color: rgb(33, 214, 214);
+  transition: 1s all linear;
+}
+
+/*
+===================
+END
+===================
+*/
